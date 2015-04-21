@@ -17,7 +17,7 @@ class Solution:
                 l = mid + 1
         return l + 1 if A[l] < target else l
 
-        
+
 if __name__ == '__main__':
     solution = Solution()
     print solution.searchInsert([1, 3, 5, 6], 5)
