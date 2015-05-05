@@ -24,7 +24,7 @@ class Solution:
                     for j in range(left):
                         words[beg + j] += ' '
                 else:
-                     words[beg] += ' ' * left
+                    words[beg] += ' ' * left
                 ret.append((' ' * avg).join(words[beg:i]))
                 beg, cnt = i, len(words[i]) + 1
         sum, i = 0, len(words)
