@@ -22,7 +22,7 @@ class Solution:
             node = node.next
         pre.next = None
         return head
-        
+
 
 if __name__ == '__main__':
     solution = Solution()
