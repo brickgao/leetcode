@@ -11,8 +11,9 @@ class TreeNode:
 
 class Solution:
     # @param {TreeNode} root
-    # @return {boolean}
-    def isSymmetric(self, root):
+    # @return {integer[][]}
+    def levelOrder(self, root):
+        ret = []
         q, l = [root], []
         cnt1, cnt2, bound = 0, 0, 1
         while q != []:
@@ -24,13 +25,11 @@ class Solution:
                 q += [left, right]
                 l.append(node.val)
                 cnt2 += 1
-            else:
-                l.append(None)
             if cnt1 == bound:
-                if l != l[::-1]:
-                    return False
+                if l != []:
+                    ret.append(list(l))
                 l, cnt1, cnt2, bound = [], 0, 0, cnt2 * 2
-        return True
+        return ret
 
 
 if __name__ == "__main__":
@@ -40,4 +39,4 @@ if __name__ == "__main__":
     d, e = TreeNode(3), TreeNode(3)
     a.left, a.right = b, c
     b.right, c.left = d, e
-    print solution.isSymmetric(a)
+    print solution.levelOrder(a)
