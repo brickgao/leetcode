@@ -38,4 +38,3 @@ if __name__ == "__main__":
     print solution.pathSum(None, 0)
     node = TreeNode(1)
     print solution.pathSum(node, 1)
-
