@@ -7,14 +7,12 @@ class Solution:
     def dfs(self, node):
         self.tmp_l.append(node)
         if self.pre[node] == []:
-            self.ret_l.append(map(
-                lambda index: self.l_dict[index], 
-                self.tmp_l[::-1]
-            ))
+            self.ret_l.append(map(lambda index: self.l_dict[index],
+                                  self.tmp_l[::-1]))
         for pre_node in self.pre[node]:
             self.dfs(pre_node)
         self.tmp_l.pop()
-        
+
     # @param start, a string
     # @param end, a string
     # @param dict, a set of string
