@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 class Solution:
     # @param {string} s
     # @return {integer}
@@ -8,7 +9,7 @@ class Solution:
         dp = [0 for i in range(len(s) + 1)]
         is_p = [[False for i in range(len(s))] for j in range(len(s))]
         for i in range(len(s) + 1):
-           dp[i] = len(s) - i 
+            dp[i] = len(s) - i
         for i in range(len(s)):
             for j in range(i, -1, -1):
                 if i - j + 1 == 1:
