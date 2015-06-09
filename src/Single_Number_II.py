@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+from ctypes import c_int
+
 
 class Solution:
     # @param {integer[]} nums
@@ -9,14 +11,10 @@ class Solution:
         for i in range(32):
             cnt = 0
             for num in nums:
-                cnt += 1 if abs(num) & (1 << i) else 0
+                cnt += 1 if num & (1 << i) else 0
             cnt %= 3
             ret += (cnt << i)
-        cnt = 0
-        for num in nums:
-            if num == ret:
-                cnt += 1
-        return ret if cnt == 1 else -ret
+        return c_int(ret).value
 
 
 if __name__ == "__main__":
