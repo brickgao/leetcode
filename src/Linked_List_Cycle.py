@@ -22,4 +22,3 @@ class Solution:
             if node1 and node1 == node2:
                 return True
         return False
-        
