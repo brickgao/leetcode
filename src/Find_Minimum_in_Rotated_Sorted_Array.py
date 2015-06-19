@@ -18,7 +18,7 @@ class Solution:
                 else:
                     l = mid
         return nums[l]
-        
+
 if __name__ == "__main__":
     solution = Solution()
     print solution.findMin([4, 5, 6, 7, 0, 1, 2])
