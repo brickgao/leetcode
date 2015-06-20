@@ -26,7 +26,6 @@ class Solution:
                         break
                     if i == cnt:
                         tmp2 = node
-                    pre = node
                     node = node.next
                 node1, node2 = tmp1, tmp2
                 while node1 != tmp2 and node2 != node:

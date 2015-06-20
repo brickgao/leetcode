@@ -5,7 +5,7 @@ class Solution:
     # @param {integer[]} prices
     # @return {integer}
     def maxProfit(self, prices):
-        maxn, pre = 0, 0
+        maxn = 0
         length = len(prices)
         l = [0 for i in range(length)]
         r = list(l)

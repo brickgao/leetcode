@@ -9,7 +9,7 @@ class Solution:
             return 0
         else:
             l = [triangle[0][0]]
-        row, col = 1, 0
+        row = 1
         while row < len(triangle):
             tmp_l = [0 for i in range(len(l) + 1)]
             for i in range(1, len(l)):

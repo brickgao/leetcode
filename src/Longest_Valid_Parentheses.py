@@ -11,7 +11,6 @@ class Solution:
                 st.append((ch, index))
             else:
                 if st != [] and st[-1][0] == '(':
-                    tmp = st.pop()
                     maxn = max(maxn, index - (-1 if st == [] else st[-1][1]))
                 else:
                     st.append((ch, index))
