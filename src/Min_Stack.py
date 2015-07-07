@@ -31,4 +31,4 @@ class MinStack:
         return self._min[-1]
 
 if __name__ == "__main__":
-    solution = Sort_List()
+    solution = MinStack()
