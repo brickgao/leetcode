@@ -18,7 +18,7 @@ class Solution:
             return _r
         else:
             return -1
-            
+
     # @param {integer} s
     # @param {integer[]} nums
     # @return {integer}
