@@ -27,7 +27,7 @@ class Solution:
     def shortestPalindrome(self, s):
         return self.get_shortest_palindrome(s)
 
-        
+
 if __name__ == "__main__":
     solution = Solution()
     print solution.shortestPalindrome("aacecaaa")

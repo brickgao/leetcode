@@ -79,6 +79,6 @@ if __name__ == "__main__":
     for i in range(10001):
         l.append([i, 10001, 10000 - i])
     print solution.getSkyline(
-            [[2, 9, 10], [3, 7, 15], [5, 12, 12], [15, 20, 10], [19, 24, 8]]
+        [[2, 9, 10], [3, 7, 15], [5, 12, 12], [15, 20, 10], [19, 24, 8]]
     )
     print solution.getSkyline(l)
