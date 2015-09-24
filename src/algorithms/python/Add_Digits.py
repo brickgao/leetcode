@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import math
-
 
 class Solution(object):
     def addDigits(self, num):
