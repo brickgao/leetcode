@@ -15,7 +15,7 @@ class Solution(object):
                     return tmp
         return 0
 
-        
+
 if __name__ == "__main__":
     solution = Solution()
     print solution.hIndex([3, 0, 6, 1, 5])
