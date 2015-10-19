@@ -20,7 +20,7 @@ private:
     int rec[100000];
 
     void dfs(int u, int now) {
-        for (auto v: mp[u]) {
+        for (auto &v: mp[u]) {
             if (rec[v] < now + 1) {
                 rec[v] = now + 1;
                 dfs(v, now + 1);
